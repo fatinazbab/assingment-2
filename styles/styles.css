@@ -1,0 +1,273 @@
+*{
+    font-family: 'Work Sans';
+    
+}
+/*----------------------
+    header banner
+ ----------------------*/
+.header{
+    background-color:  rgba(255, 144, 14, 0.1);
+    width:100%;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+}
+.nav-title{
+    font-weight: 700;
+    font-size: 45px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin: 30px;
+    margin-right: 40px;
+    text-align: center;
+    color: #424242;
+}
+/*----------------------- 
+ List of features 
+-----------------------*/
+.title{
+    font-weight: 700;
+font-size: 64px;
+text-align: center;
+padding-bottom: 45px;
+
+}
+.title h2{
+    margin-bottom: 25px;
+}
+.title-description{
+    font-weight: 400;
+font-size: 16px;
+text-align: center;
+}
+.btn-primary-1{
+    width: 180px;
+height: 64px;
+background: #FF900E;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+color: #FFFFFF;
+}
+.title img{
+  width: 100%;
+    margin-top: 30px;
+}
+/*-------------------- 
+    Exprience 
+--------------------*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 200px;
+    margin-top: 85px;
+    border-radius: 8px;
+}
+.section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    
+}
+.detail-title{
+    font-weight: 500;
+font-size: 45px;
+}
+.color-1{
+    color: #727272;
+}
+.color-2{
+    color: #131313;
+}
+.color-3{
+    color: #FF900E;
+}
+.details{
+    margin-left: 600px;
+}
+.container img{
+    height: 342px;
+    width: 342px;
+}
+.detail-description{
+    color: #727272;
+}
+.container-2{
+    text-align: left;
+    margin-top: 45px;
+
+    
+}
+
+.features-title{
+    font-size: 45px;
+    padding-left: 50px;
+
+}
+.features-description-1{
+    padding-left: 30px;
+    color: #727272;
+}
+.description-container{
+    padding-left: 70px;
+    margin-top: 30px;
+    
+    
+}
+
+.features-section{
+    margin-top: 50px;
+    
+}
+.features-title{
+    color: #131313;
+}
+.features-description{
+    color: #727272;
+    margin-bottom: 90px;
+    font-size: 16px;
+}
+
+.features{
+    display: flex;
+}
+.btn-primary-2{
+    width: 342px;
+    height: 200px;
+    background: #FF900E;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+.features-btn{
+    font-weight: 700;
+font-size: 65px;
+}
+.feature-btn{
+    padding-left: 350px;
+    
+}
+/*-------------------- 
+       Facts 
+---------------------*/
+.fact-title{
+    font-size: 45px;
+}
+.fact-description{
+    font-weight: 400px;
+    font-size: 16px;
+    color: #727272;
+}
+.fact-container{
+    display: flex;
+    gap: 125px;
+    justify-content: space-evenly;
+}
+.box{
+    justify-content: center;
+     border: 1px solid #FF900E;
+    border-radius: 8px;;
+    
+    height: 180px;
+    text-align: center;
+    margin-top: 100px;
+    padding: 45px 30px;
+}
+.fact-container h2{
+    font-size: 45px;
+    color: #424242;
+}
+.fact-container p{
+    color: #727272;
+    font-size: 20px;
+}
+.sponsers-container h2{
+    padding-left: 240px;
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}.sponsers-container{
+    padding-left: 280px;
+    margin-top: 180px;
+}
+.sponsers-container p{
+    font-weight: 400;
+font-size: 16px;
+color: #727272;
+justify-content: space-evenly;
+}
+.sponsers-icon{
+    margin-top: 60px;
+    display: flex;
+    gap: 25px;
+    
+}
+/*-----------------
+     Footer 
+-----------------*/
+.footer{
+    background: #FFF4E7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 130px;
+}
+.description{
+    color: #424242;
+    text-align: center;
+    justify-content: center;
+
+    font-weight: 400;
+    font-size: 20px;
+}
+/*--------------------------------- 
+     Resposive for mobile 
+----------------------------------*/
+@media only screen and (max-width:688px) {
+    nav ul, .fact-container{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .section-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 1px;
+        
+    }
+    .sponsers-container, .sponsers-container h2, .feature-btn{
+        padding-left: 2px;
+    }
+    .sponsers-icon{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .picture img{
+        width: 100%;
+    }
+    .details{
+        margin-left: 2px;
+        padding-top: 1500px;
+    }
+ 
+}
